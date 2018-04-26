@@ -15,12 +15,17 @@ docker pull <image>
 docker run -it <image> /bin/bash
 ```
 
-## commit image
+## Print container list
 ```bash
-docker commit <image ID> <tag>
+docker ps -a
 ```
 
-## Mount folder
+## Commit container
+```bash
+docker commit <container ID> <tag>
+```
+
+## Mount folder 
 ```bash
 docker run -it -v <window folder>:<container folder> <image>:<tag>
 ```
