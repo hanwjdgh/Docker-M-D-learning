@@ -20,6 +20,12 @@ docker run -it <image> /bin/bash
 docker ps -a
 ```
 
+## Delete All container 
+```bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+
 ## Commit container
 ```bash
 docker commit <container ID> <tag>
