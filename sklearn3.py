@@ -40,3 +40,7 @@ for i in range(0,len(train_label)):
         graph_dic[label] = data
 asclist = [[chr(n) for n in range(97,97+26)]]
 df = pd.DataFrame(graph_dic,index=asclist)
+
+plt.style.use('ggplot')
+df.plot(kind='bar',subplots=True, ylim=(0,0.15))
+plt.savefig("lang-plot.png")
