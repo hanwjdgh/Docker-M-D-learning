@@ -1,5 +1,6 @@
 # Docker Machine&Deep learning
-
+Docker hub : https://hub.docker.com/r/hanwjdgh/mlearn/
+docker pull hanwjdgh/mlearn
 ## Search image
 ```bash
 docker search <image>
